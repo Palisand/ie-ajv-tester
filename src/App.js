@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import validator from './validator';
 // import validator from './validatorWithAjvAsync';
+// import validator from './validatorWithBabel';
 
 class App extends Component {
 
   attemptValidation = async () => {
     try {
       await validator.validate({
-        foo: "bar",
+        foo: 'bar',
       });
       alert('success');
     }

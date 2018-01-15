@@ -27,4 +27,4 @@ At this point, you have 4 options:
 3. Drop asyncronous validation (provide schemas that do not use `$async: true`) in IE contexts.
 4. Use an alternate transpilation method through the `processCode` option (see [AJV Options](https://github.com/epoberezkin/ajv#options)).
 
-**I am currently working on 4.**
+A solution using option 4 is provided in this repository. Transpilation is handled by [babel-standalone](https://github.com/babel/babel/tree/master/packages/babel-standalone). You can test it by `import`ing `validator` from `./validatorWithBabel` within _`App.js`_. **This solution only serves as a demonstration and does not include an environment check; it will run as-is on all browsers.**
