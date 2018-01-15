@@ -1,0 +1,12 @@
+{
+  "$id": "schema.json",
+  "$async": true,
+  "type": "object",
+  "properties": {
+    "foo": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["foo"]
+}
