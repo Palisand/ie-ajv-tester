@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
+
+// REPRODUCE RUNTIME ERROR
 import validator from './validator';
+
+// REPRODUCE COMPILE-TIME ERROR
 // import validator from './validatorWithAjvAsync';
+
+// SOLUTION 4
 // import validator from './validatorWithBabel';
+
+// SOLUTION 5
+// import validator from './validateCompiled';
 
 class App extends Component {
 
